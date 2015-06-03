@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_follower_height"
+    android:background="@drawable/bg_click_white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/row_follower_height"
+        android:layout_height="@dimen/row_follower_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_border_white_1dp"
+        android:src="@drawable/image_avatar_default_no_border" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/row_follower_height"
+        android:layout_marginLeft="@dimen/margin_padding_xxnormal"
+        android:layout_toRightOf="@+id/ivAvatar" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/viewSeparator">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding_small"
+                android:layout_toLeftOf="@+id/ivAction"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/sign_up_teal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#686868"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivAction"
+                android:layout_width="@dimen/button_size_normal"
+                android:layout_height="@dimen/button_size_normal"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_padding_xxnormal"
+                android:src="@drawable/btn_followed" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewSeparator"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:background="#4d4d4d" />
+    </RelativeLayout>
+
+</RelativeLayout>

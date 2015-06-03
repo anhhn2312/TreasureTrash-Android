@@ -1,0 +1,242 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- App theme -->
+    <!-- <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"> -->
+    <!-- <item name="android:windowSoftInputMode">stateHidden</item> -->
+    <!-- </style> -->
+
+    <style name="Layout"></style>
+
+    <style name="Layout.FillWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.FillWidthHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.WrapWidthHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.FillWidth.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.FillWidthHeight.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.WrapWidthHeight.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.Weight">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Layout.Weight.Width">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.Weight.WidthFillHeight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout.Weight.Height">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Layout.Weight.HeightFillWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="Button"></style>
+
+    <style name="ToggleButton" parent="Layout.WrapWidthHeight">
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.FillWidth">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Text.WrapWidth">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Text.FillWidth.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.WrapWidth.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.FillWidth.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Text.WrapWidth.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Text.Header" parent="Layout.Weight.Width">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="Text.Title" parent="Layout.FillWidth">
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="Text.Title.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Title.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Title.DarkerGray">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Text.Title.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Text.Content" parent="Layout.FillWidth">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.Content.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Content.DarkerGray">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Text.Content.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Text.Shadow" parent="Layout.FillWidth">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/darker_gray</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <!-- List View -->
+    <style name="ListView" parent="Layout.FillWidth">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+    
+      <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="relativelayout_vertical_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="linearlayout_vertical_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linearlayout_vertical_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="linearlayout_vertical_fill_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linearlayout_horizontal_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="linearlayout_horizontal_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="linearlayout_profile_sub_menu_divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingTop">@dimen/margin_padding_tiny</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_tiny</item>
+    </style>
+    
+    <style name="view_profile_sub_menu_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#36967e</item>
+    </style>
+    
+	<style name="textview_profile_sub_menu">
+	    <item name="android:textColor">@color/white</item>
+	    <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_xnormal</item>
+	    
+	</style>
+
+    <style name="textview_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_wrap_wrap_center">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

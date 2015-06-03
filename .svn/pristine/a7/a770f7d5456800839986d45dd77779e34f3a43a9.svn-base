@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/margin_padding_large"
+    android:paddingLeft="@dimen/margin_padding_normal"
+    android:paddingRight="@dimen/margin_padding_normal"
+    android:paddingTop="@dimen/margin_padding_large" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/messages"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_xxlarge" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@color/sign_up_teal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_padding_xnormal"
+        android:paddingTop="@dimen/margin_padding_xnormal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvYourListings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/your_listings"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvYourListingsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_tiny"
+                android:layout_toRightOf="@+id/tvYourListings"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:layout_width="@dimen/button_size_tiny"
+                android:layout_height="@dimen/button_size_tiny"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_padding_xxnormal"
+                android:src="@drawable/icon_forward_teal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:background="@color/sign_up_teal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_normal" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvYourEnquiries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/your_enquiries"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvEnquiriesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_tiny"
+                android:layout_toRightOf="@+id/tvYourEnquiries"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:layout_width="@dimen/button_size_tiny"
+                android:layout_height="@dimen/button_size_tiny"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_padding_xxnormal"
+                android:src="@drawable/icon_forward_teal" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:background="@color/sign_up_teal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_normal" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvExpiredItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/expired_items"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvExpiredCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_tiny"
+                android:layout_toRightOf="@+id/tvExpiredItem"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:layout_width="@dimen/button_size_tiny"
+                android:layout_height="@dimen/button_size_tiny"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_padding_xxnormal"
+                android:src="@drawable/icon_forward_teal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

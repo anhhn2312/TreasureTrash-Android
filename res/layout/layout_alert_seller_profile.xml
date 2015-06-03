@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAlertSellerProfile"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sign_up_teal"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_padding_large"
+    android:paddingLeft="@dimen/margin_padding_small"
+    android:paddingRight="@dimen/margin_padding_small"
+    android:paddingTop="@dimen/margin_padding_normal" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:id="@+id/tvContactAlert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/message_alert_seller_profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxlarge" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvSellerSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/sign_up_teal"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSignupClick"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxhuge" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvSellerLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/sign_up_teal"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onLoginClick"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxhuge" />
+    </RelativeLayout>
+
+</LinearLayout>

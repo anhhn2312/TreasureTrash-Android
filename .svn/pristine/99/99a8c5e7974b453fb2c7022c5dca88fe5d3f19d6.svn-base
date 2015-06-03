@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_follower_height"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/row_follower_height"
+        android:layout_height="@dimen/row_follower_height"
+        android:background="@drawable/bg_border_white_1dp"
+        android:src="@drawable/image_avatar_default_no_border" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_blocked_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_follower_height"
+        android:layout_marginLeft="@dimen/margin_padding_xxnormal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvUnblock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_padding_xtiny"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/unblock"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#4d4d4d"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

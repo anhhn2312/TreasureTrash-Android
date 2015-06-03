@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_small_radius"
+    android:orientation="vertical" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:id="@+id/lblConfirmText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_padding_normal"
+        android:text="@string/you_are_about_to_purchase"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <com.pt.treasuretrash.widget.HelveticaBoldTextView
+        android:id="@+id/lblPurchaseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/margin_padding_normal"
+        android:paddingRight="@dimen/margin_padding_normal"
+        android:paddingBottom="@dimen/margin_padding_normal"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sign_up_teal" />
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:id="@+id/lblCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_padding_normal"
+        android:text="@string/cancel"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_xxlarge" />
+
+</LinearLayout>

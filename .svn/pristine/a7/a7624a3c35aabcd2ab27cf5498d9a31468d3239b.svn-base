@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_black_wood" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/header_background"
+            android:paddingBottom="@dimen/margin_padding_small"
+            android:paddingLeft="@dimen/margin_padding_xxsmall"
+            android:paddingRight="@dimen/margin_padding_xtiny"
+            android:paddingTop="@dimen/margin_padding_small" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/ivLeftMenu"
+                    android:layout_width="@dimen/button_size_xsmall"
+                    android:layout_height="@dimen/button_size_xsmall"
+                    android:src="@drawable/icon_left_menu_avatar" />
+
+                <ImageView
+                    android:id="@+id/ivCloseLeftMenu"
+                    android:layout_width="@dimen/button_size_xsmall"
+                    android:layout_height="@dimen/button_size_xsmall"
+                    android:src="@drawable/icon_header_close" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivDiamond"
+                android:layout_width="@dimen/button_size_xlarge"
+                android:layout_height="@dimen/button_size_xlarge"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_header_diamond" />
+
+            <ImageView
+                android:id="@+id/ivRightMenu"
+                android:layout_width="@dimen/button_size_xxnormal"
+                android:layout_height="@dimen/button_size_xxnormal"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_header_menu" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <fragment
+                android:id="@+id/fragmentGallery"
+                android:name="com.pt.treasuretrash.fragment.GalleryFragment"
+                style="@style/Layout.FillWidthHeight" />
+
+            <fragment
+                android:id="@+id/fragmentMessage"
+                android:name="com.pt.treasuretrash.fragment.MessageFragment"
+                style="@style/Layout.FillWidthHeight" />
+
+            <fragment
+                android:id="@+id/fragmentFavoriteItems"
+                android:name="com.pt.treasuretrash.fragment.FavoriteItemsFragment"
+                style="@style/Layout.FillWidthHeight" />
+
+            <fragment
+                android:id="@+id/fragmentActivityFeed"
+                android:name="com.pt.treasuretrash.fragment.ActivityFeedFragment"
+                style="@style/Layout.FillWidthHeight" />
+
+            <fragment
+                android:id="@+id/fragmentMesssageList"
+                android:name="com.pt.treasuretrash.fragment.MessageListFragment"
+                style="@style/Layout.FillWidthHeight" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_bottom_height"
+            android:background="@color/sign_up_teal"
+            android:orientation="horizontal"
+            android:weightSum="640" >
+
+            <LinearLayout
+                android:id="@+id/llGallery"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="122"
+                android:background="@drawable/bg_bottom_menu_gallery"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessage"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="131"
+                android:background="@drawable/bg_bottom_menu_message"
+                android:orientation="horizontal"
+                android:weightSum="131" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="75" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="56"
+                    android:orientation="vertical"
+                    android:weightSum="97" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="15" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="82" >
+
+                        <RelativeLayout
+                            android:id="@+id/rlNewMessage"
+                            android:layout_width="@dimen/button_size_small"
+                            android:layout_height="@dimen/button_size_small"
+                            android:visibility="invisible" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@drawable/icon_new_message" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/tvNewMessage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_xsmall" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFavorite"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="129"
+                android:background="@drawable/bg_bottom_menu_favorite"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFeed"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="131"
+                android:background="@drawable/bg_bottom_menu_feed"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAddListing"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="127"
+                android:background="@drawable/bg_bottom_menu_add_listing"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCoachMark"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_coach_mark"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/header_background_transparent_30"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_coach_mark_brown"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnFindLocalTreasure"
+                    android:layout_width="@dimen/signup_btn_width"
+                    android:layout_height="@dimen/signup_btn_height"
+                    android:background="@drawable/btn_find_local_treasure"
+                    android:gravity="center"
+                    android:text="@string/find_local_treasure"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xxlarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_bottom_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_coach_mark"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height" />
+
+            <LinearLayout
+                android:id="@+id/llActualCoachMark"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_bottom_height" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_alert_home" />
+
+</RelativeLayout>

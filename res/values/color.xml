@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="pink">#D1A5B7</color>
+    <color name="grey">#808080</color>
+    <color name="purple">#c6bfe8</color>
+    <color name="work_color">#cccccc</color>
+    <color name="time_color">#cccccc</color>
+    <color name="hint_color">#cccccc</color>
+    <color name="text">#575759</color>
+    <color name="blue_header">#1f94cd</color>
+    <color name="gray">#e9e9e9</color>
+    <color name="violet">#892980</color>
+    <color name="green">#008000</color>
+    <color name="color_button_blue">#4cb4b5</color>
+    <color name="brown">#946146</color>
+    <color name="yellow">#ffd800</color>
+    <color name="blue">#2f68ac</color>
+    <color name="transparent_color_change_avata">#82a77700</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#80000000</color>
+    <color name="transparent_25">#40000000</color>
+    <color name="transparent_35">#59000000</color>
+    <color name="red_transparent">#66FF0000</color>
+    <color name="brown_transparent">#78650000</color>
+    <color name="red">#FF0000</color>
+    <color name="violetframe">#7d6b91</color>
+    <color name="cl_tabmain">#303b52</color>
+
+    <!-- Color Text -->
+    <color name="text_header">#000000</color>
+    <color name="red_text">#ff2222</color>
+    <color name="white_text">#ffffff</color>
+    <color name="text_home_fragment">#323232</color>
+    <color name="number_home_fragment">#008000</color>
+    <color name="text_spinner">#002200</color>
+    <color name="text_minute_top_score">#05c405</color>
+    <color name="text_color_resname">#024e78</color>
+    <color name="text_color_res_detail">#faA570</color>
+
+    <!-- Color Background -->
+    <color name="background_header">#32a2f7</color>
+    <color name="background">#656565</color>
+    <color name="background_frame">#363b3f</color>
+    <color name="background_reminder">#3c3c3c</color>
+    <!-- Color Indicator -->
+    <color name="background_indicator">#2c7d13</color>
+    <color name="text_indicator_selected">#ffc322</color>
+    <color name="background_login">#852323</color>
+    <color name="background_signup">#f9f9f9</color>
+    <color name="text_signup">#b8b8b8</color>
+    <!-- Color Indicator -->
+    <!-- Color Indicator -->
+    <!-- Layout Color -->
+    <color name="blueText">#4675A3</color>
+    <color name="blueText_distance">#5a98d4</color>
+    <color name="grayText">#5A5A5A</color>
+    <color name="graybackground">#ebebeb</color>
+    <color name="graydivider">#b3b3b3</color>
+    <color name="graydivider2">#ffffff</color>
+    <color name="colorForEdittext">#2F6179</color>
+    <color name="gray_leftmenu_username">#c2c1c1</color>
+    <color name="gray_share_setting">#aeaeae</color>
+
+    <!-- Setting background color -->
+    <color name="red_setting">#ff6a59</color>
+    <color name="blue_setting">#65a1dd</color>
+    <color name="yellow_setting">#fff39d</color>
+    <color name="pink_setting">#ff99ce</color>
+    <color name="red_header">#b70a24</color>
+    <color name="red_light">#cddcab</color>
+    <color name="black_news">#4b4b4b</color>
+    <color name="black_news_time">#4b4b4b</color>
+    <color name="bg_app">#fbf1db</color>
+    <color name="orange_setting">#fb6c00</color>
+    <color name="blue_sky">#82caff</color>
+    <color name="whiteBlue">#53abfc</color>
+    <color name="blue_1">#53abfc</color>
+    <color name="pumpkin">#d35400</color>
+    <color name="color_text">#2c3e50</color>
+    <color name="sea_blue">#07599a</color>
+    <color name="feed_time_color">#787878</color>
+    <!-- <color name="orange">#f78d1e</color> -->
+    <color name="black_transparent_30">#30000000</color>
+    <color name="black_transparent_60">#60000000</color>
+    <color name="black_transparent_70">#70000000</color>
+    <color name="black_transparent_90">#90000000</color>
+    <color name="white_transparent_40">#40FFFFFF</color>
+    <color name="white_transparent_90">#90FFFFFF</color>
+    <color name="text_red">#fd0707</color>
+    <color name="btn_edit_item_disable">#898989</color>
+
+    <!-- Left Menu Colors -->
+    <color name="left_menu_text">#06a8a8</color>
+    <color name="left_menu_horizontal_divider_not_transparent">#545454</color>
+    <color name="left_menu_horizontal_divider">#80515151</color>
+    <color name="left_menu_vertical_divider">#979998</color>
+    <color name="header_background">#5d3d30</color>
+    <color name="header_background_transparent_30">#305d3d30</color>
+    <color name="header_background_transparent_80">#905d3d30</color>
+
+    <!-- Sign up -->
+    <color name="sign_up_teal">#06a8a8</color>
+    <color name="sign_up_dark_teal">#048282</color>
+    <color name="sign_up_gray">#9e9e9e</color>
+    <color name="sign_up_light_gray">#c2c2c2</color>
+    <color name="bg_color_error_editext">#fff2f2</color>
+    <color name="bg_dialog_button_light_gray">#e6e6e6</color>
+
+    
+    <!-- Add a listing colors -->
+    <color name="bg_listing_header">#80ececec</color>
+    <color name="bg_listing_header_transparent_70">#70ececec</color>
+    <color name="bg_listing_header_transparent_90">#90ececec</color>
+    <color name="bg_listing_take_photo">#c0c0c0</color>
+    <color name="text_color_listing">#78655e</color>
+    <color name="text_color_listing_green">#06a8a8</color>
+    <color name="type_color_selected">#05a8a8</color>
+
+</resources>

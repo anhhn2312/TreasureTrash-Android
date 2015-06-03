@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutWrapperYourDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_padding_small"
+                android:paddingBottom="@dimen/margin_padding_xsmall"
+                android:paddingLeft="@dimen/margin_padding_xsmall"
+                android:paddingRight="@dimen/margin_padding_xsmall" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/your_details"
+                    android:textColor="@color/text_color_listing_green"
+                    android:textSize="@dimen/text_size_huge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_icon_xlarge"
+                    android:layout_marginBottom="@dimen/margin_padding_xsmall"
+                    android:layout_marginTop="@dimen/margin_padding_xsmall"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_icon_xlarge"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/img_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_border_teal"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_left_menu_avatar" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/lbl_change_avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img_avatar"
+                            android:background="@drawable/bg_text_change_avata"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/margin_padding_tiny"
+                            android:paddingTop="@dimen/margin_padding_tiny"
+                            android:text="@string/Change"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_xnormal" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin_padding_small" >
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/lbl_your_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_listing"
+                            android:textSize="@dimen/text_size_xxlarge" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lbl_location"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:textColor="@color/text_color_listing"
+                                android:textSize="@dimen/text_size_xnormal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lbl_change_location"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="@string/change"
+                                android:textColor="@color/text_color_listing_green"
+                                android:textSize="@dimen/text_size_xnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/margin_padding_small"
+                    android:layout_marginTop="@dimen/margin_padding_large"
+                    android:background="@color/text_color_listing_green" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_small"
+                    android:singleLine="true"
+                    android:text="@string/edit_your_details"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_border_teal"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/style_row_sign_up"
+                        android:background="@color/gray_leftmenu_username" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lblNameTitle"
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/username"
+                                android:textColor="@color/grey" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/cant_change"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_username"
+                                style="@style/style_icon_sign_up_left"
+                                android:src="@drawable/icon_diamon_gray_user_profile" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lbl_username"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_padding_small"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="#797878"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutYourName"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/your_name_2"
+                                android:textColor="@color/sign_up_teal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/_private"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_yourname"
+                                style="@style/style_icon_sign_up_left"
+                                android:src="@drawable/icon_user_no_border" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/txt_your_name_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_padding_small"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutEmail"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/email"
+                                android:textColor="@color/sign_up_teal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/_private"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_email"
+                                style="@style/style_icon_sign_up_left"
+                                android:src="@drawable/ic_email_transparent" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/txt_email_detail"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_padding_small"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/margin_padding_xtiny"
+                        android:paddingTop="@dimen/margin_padding_xtiny"
+                        android:visibility="gone" >
+
+                        <CheckBox
+                            android:id="@+id/chk_receive_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:button="@drawable/bg_checkbox"
+                            android:checked="true" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_padding_xtiny"
+                            android:singleLine="true"
+                            android:text="@string/receive_email"
+                            android:textColor="@color/sign_up_teal"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutPassword"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/change_password"
+                                android:textColor="@color/sign_up_teal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lblShowHidePassword"
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/show_password"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_change_pass"
+                                style="@style/style_icon_sign_up_left"
+                                android:src="@drawable/icon_shield_teal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/txt_change_pass"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_padding_small"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/date_of_birth"
+                                android:textColor="@color/sign_up_teal" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/_private"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/img_dob"
+                                style="@style/style_icon_sign_up_left"
+                                android:src="@drawable/common_icon_calenda" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lbl_dob"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_padding_small"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/btnMale"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/signup_btn_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_male_active"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/sign_up_teal" />
+
+                        <LinearLayout
+                            android:id="@+id/btnFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/signup_btn_height"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_female_inactive"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/btnSaveChange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/signup_btn_height"
+                    android:layout_marginTop="@dimen/margin_padding_small"
+                    android:background="@color/sign_up_teal"
+                    android:gravity="center"
+                    android:text="Save changes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_transparent_change_avt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_transparent_90"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_padding_normal"
+                android:paddingLeft="@dimen/margin_padding_xsmall"
+                android:paddingTop="@dimen/margin_padding_xsmall" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/your_details"
+                    android:textColor="@color/text_color_listing_green"
+                    android:textSize="@dimen/text_size_huge"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_icon_xlarge"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/width_icon_xlarge"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/img_avatar_change"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/icon_left_menu_avatar" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sign_up_teal"
+                    android:orientation="vertical" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_padding_small"
+                        android:layout_marginTop="@dimen/margin_padding_small"
+                        android:gravity="center_horizontal"
+                        android:text="@string/change_profile_image"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_huge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/margin_padding_normal" >
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <ImageView
+                            android:id="@+id/img_camera"
+                            android:layout_width="@dimen/width_icon_large"
+                            android:layout_height="@dimen/height_icon_large"
+                            android:layout_marginRight="@dimen/margin_padding_small"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/camera_btn_capture" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/img_gallery"
+                            android:layout_width="@dimen/width_icon_large"
+                            android:layout_height="@dimen/height_icon_large"
+                            android:layout_marginLeft="@dimen/margin_padding_small"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_gallery" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

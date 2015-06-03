@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_small_radius"
+    android:orientation="vertical" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_padding_normal"
+        android:text="@string/add_some_more_description"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sign_up_teal" />
+
+    <com.pt.treasuretrash.widget.AutoBgButton
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_padding_normal"
+        android:text="@string/ok"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_xlarge" />
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutWrapperMenuLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_menu_black_wood" >
+
+        <LinearLayout
+            style="@style/Layout.FillWidthHeight.Vertical"
+            android:orientation="vertical"
+            android:weightSum="1136" >
+
+            <!-- User avatar and name -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="179"
+                android:background="@drawable/bg_menu_brown_wood"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:paddingLeft="@dimen/margin_padding_normal"
+                android:paddingRight="@dimen/margin_padding_small"
+                android:paddingTop="@dimen/margin_padding_xsmall"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:id="@+id/llUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ivAvatar"
+                        android:layout_width="@dimen/menu_user_avatar_size"
+                        android:layout_height="@dimen/menu_user_avatar_size"
+                        android:background="@drawable/bg_border_white_1dp"
+                        android:src="@drawable/image_avatar_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="7.2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/menu_user_avatar_size"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hi_there_dot"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/left_menu_item_text_size" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/create_an_account"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Menu Item -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="695"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/left_menu_item_layout"
+                    android:visibility="gone" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuSignup"
+                        style="@style/left_menu_item"
+                        android:layout_marginBottom="@dimen/margin_padding_xtiny"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="@dimen/margin_padding_tiny"
+                        android:text="@string/sign_up" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/left_menu_item_layout"
+                    android:background="@drawable/bg_left_menu_last_item_selector"
+                    android:visibility="gone" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuLogin"
+                        style="@style/left_menu_item"
+                        android:layout_marginBottom="@dimen/margin_padding_xtiny"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="@dimen/margin_padding_tiny"
+                        android:text="@string/login" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_your_detail"
+                    style="@style/left_menu_item_layout" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuYourDetails"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_your_details" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuYourDetails"
+                        style="@style/left_menu_item"
+                        android:text="@string/your_details" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_your_listing"
+                    style="@style/left_menu_item_layout" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuYourListings"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_your_listings" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuYourListings"
+                        style="@style/left_menu_item"
+                        android:text="@string/your_listings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_location"
+                    style="@style/left_menu_item_layout"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuLocation"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_location" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuLocation"
+                        style="@style/left_menu_item"
+                        android:text="@string/location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_share_settings"
+                    style="@style/left_menu_item_layout" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuShareSettings"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_share_settings" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuShareSettings"
+                        style="@style/left_menu_item"
+                        android:text="@string/share_settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_block_members"
+                    style="@style/left_menu_item_layout" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuBlockMember"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_block" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuBlockMember"
+                        style="@style/left_menu_item"
+                        android:text="@string/blocked_member" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_logout"
+                    style="@style/left_menu_item_layout"
+                    android:background="@color/transparent"
+                    android:paddingLeft="@dimen/margin_padding_normal" >
+
+                    <ImageView
+                        android:id="@+id/ivMenuLogout"
+                        style="@style/left_menu_image"
+                        android:src="@drawable/icon_menu_logout" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvMenuLogout"
+                        style="@style/left_menu_item"
+                        android:text="@string/logout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="232"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_padding_normal"
+                android:paddingTop="@dimen/margin_padding_normal"
+                android:weightSum="4" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvFeedback"
+                    style="@style/left_menu_bottom_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/feedback" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvFaq"
+                    style="@style/left_menu_bottom_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/faq_tips" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvPrivacy"
+                    style="@style/left_menu_bottom_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/privacy_policy" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvTerm"
+                    style="@style/left_menu_bottom_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/term_of_use" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Slider your detail layout -->
+
+    <include layout="@layout/slider_left_menu_layout" />
+    <include layout="@layout/slider_location_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_favorite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutNoFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_padding_small"
+            android:paddingTop="@dimen/margin_padding_small"
+            android:weightSum="640" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="456"
+                android:text="@string/message_alert_no_favorite_item"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxnormal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="184"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_weight="0.9" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow_no_favorite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_padding_tiny" >
+
+                    <ImageView
+                        android:id="@+id/iv_AddFavorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_add_favorite_" />
+
+                    <ImageView
+                        android:id="@+id/iv_AlreadyFavorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_xxsmall"
+                        android:src="@drawable/btn_already_favorite" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnFindLocalTreasures"
+            android:layout_width="@dimen/signup_btn_width"
+            android:layout_height="@dimen/signup_btn_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_find_local_treasure"
+            android:gravity="center"
+            android:text="@string/find_local_treasure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxlarge" />
+    </RelativeLayout>
+
+    <com.pt.treasuretrash.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/layoutShowFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/lblActiveFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_small"
+                android:singleLine="true"
+                android:text="@string/your_active_favourite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                android:id="@+id/grvFavouriteActive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/lblExpiredFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_small"
+                android:singleLine="true"
+                android:text="@string/your_expired_favourite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                android:id="@+id/grvFavouriteExpired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/lblGoneFavourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_small"
+                android:singleLine="true"
+                android:text="@string/your_gone_favourite"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                android:id="@+id/grvFavouriteGone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+    </com.pt.treasuretrash.pulltorefresh.library.PullToRefreshScrollView>
+
+</RelativeLayout>

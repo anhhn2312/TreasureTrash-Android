@@ -1,0 +1,133 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Left Menu -->
+
+    <style name="left_menu_item_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_left_menu_item_selector</item>
+        <!-- <item name="android:paddingLeft">@dimen/margin_padding_normal</item> -->
+        <!-- <item name="android:paddingBottom">@dimen/left_menu_item_padding_bottom</item> -->
+        <!-- <item name="android:paddingLeft">@dimen/left_menu_item_padding_left</item> -->
+        <!-- <item name="android:paddingRight">@dimen/left_menu_item_padding_right</item> -->
+        <!-- <item name="android:paddingTop">@dimen/left_menu_item_padding_bottom</item> -->
+    </style>
+
+    <style name="left_menu_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/left_menu_text</item>
+        <item name="android:textSize">@dimen/left_menu_item_text_size</item>
+        <!-- <item name="android:background">@drawable/bg_click_white</item> -->
+    </style>
+
+    <style name="left_menu_bottom_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_xnormal</item>
+    </style>
+
+    <style name="left_menu_image">
+        <item name="android:layout_width">@dimen/left_menu_icon_width</item>
+        <item name="android:layout_height">@dimen/left_menu_icon_height</item>
+        <!-- <item name="android:layout_marginLeft">@dimen/margin_padding_normal</item> -->
+        <item name="android:layout_marginTop">@dimen/margin_padding_small</item>
+        <!-- <item name="android:background">@drawable/bg_left_sliding_menu_item</item> -->
+        <item name="android:layout_marginBottom">@dimen/margin_padding_small</item>
+    </style>
+    <!-- style text view -->
+    <style name="style_label_sign_up_gray_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textColor">@color/sign_up_gray</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="style_label_sign_up_gray_right">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|top</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/sign_up_light_gray</item>
+        <item name="android:textSize">@dimen/text_size_xxtiny</item>
+    </style>
+
+    <style name="style_icon_sign_up_left">
+        <item name="android:layout_width">@dimen/button_size_small</item>
+        <item name="android:layout_height">@dimen/button_size_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/margin_padding_tiny</item>
+    </style>
+    
+    <style name="style_row_sign_up">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_tiny</item>
+        <item name="android:paddingRight">@dimen/margin_padding_xtiny</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_xtiny</item>
+    </style>
+    <!-- Progress Dialog -->
+
+    <style name="ProgressDialogTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+    
+     <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

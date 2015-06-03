@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <View
+        android:id="@+id/viewOpaque"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black_transparent_70"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="3"
+                android:weightSum="17" >
+
+                <ImageView
+                    android:id="@+id/ivStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/image_item_gone"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ivFavorite"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_diamond_solid_blue"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyPublishedListing"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="@dimen/button_size_xnormal"
+            android:layout_height="@dimen/button_size_xnormal"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon_tick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPremium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="215" >
+
+        <ImageView
+            android:id="@+id/ivPremium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="179"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_item_premium"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewTransparentPublish"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/header_background_transparent_80"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/view1dayToGo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_1_day_to_go_white_transparent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="162" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="71" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="48"
+                android:background="@drawable/bg_1_day_to_go_red"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_padding_tiny"
+                android:layout_marginRight="@dimen/margin_padding_tiny"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_xxtiny"
+                    android:layout_height="@dimen/button_size_xxtiny"
+                    android:background="@drawable/icon_1_day_to_go_alert" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_day_to_go"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNewMessage"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icon_new_message" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvNewMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xsmall" />
+    </RelativeLayout>
+
+</RelativeLayout>

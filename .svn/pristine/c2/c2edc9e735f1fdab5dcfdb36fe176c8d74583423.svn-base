@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutWrapperBlocked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_padding_normal" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/manage_blocked_users"
+        android:textColor="@color/text_color_listing"
+        android:textSize="@dimen/text_size_huge" />
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:id="@+id/lbl_notify_blocked_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_xxsmall"
+        android:singleLine="true"
+        android:text="@string/tab_the_username_or_icon_to_unblock_user"
+        android:textColor="@color/text_color_listing"
+        android:textSize="@dimen/text_size_xxnormal" />
+
+    <ListView
+        android:id="@+id/lv_blocked_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_black_wood"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_background"
+        android:paddingLeft="@dimen/margin_padding_small" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/rlBack"
+            android:layout_marginRight="@dimen/margin_padding_normal" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/button_size_xsmall"
+                android:layout_height="@dimen/button_size_xsmall"
+                android:layout_above="@+id/tvInvi"
+                android:layout_marginBottom="-5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_back" />
+
+            <com.pt.treasuretrash.widget.HelveticaTextView
+                android:id="@+id/tvInvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsmall"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/rlFollow"
+            android:layout_toRightOf="@+id/rlBack" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="-5dp"
+                android:layout_above="@+id/tvMemberType"
+                android:orientation="horizontal" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <ImageView
+                    android:id="@+id/ivMemberType"
+                    android:layout_width="@dimen/button_size_xxtiny"
+                    android:layout_height="@dimen/button_size_xxtiny"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_star_gold" />
+            </LinearLayout>
+
+            <com.pt.treasuretrash.widget.HelveticaTextView
+                android:id="@+id/tvMemberType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsmall" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_padding_normal"
+            android:background="@color/transparent" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnFollow"
+                android:layout_width="@dimen/button_size_xsmall"
+                android:layout_height="@dimen/button_size_xsmall"
+                android:layout_above="@+id/tvFollow"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_follow_user" />
+
+            <com.pt.treasuretrash.widget.HelveticaTextView
+                android:id="@+id/tvFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="1dp"
+                android:text="@string/follow"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsmall" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivCloseMenu"
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_padding_normal"
+            android:src="@drawable/icon_header_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1047" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="180" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/black_transparent_90"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:paddingRight="@dimen/margin_padding_small"
+                android:weightSum="180" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="134"
+                    android:orientation="horizontal"
+                    android:weightSum="600" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="141"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/ivAvatar"
+                            android:layout_width="@dimen/seller_profile_image_size"
+                            android:layout_height="@dimen/seller_profile_image_size"
+                            android:background="@drawable/bg_border_white_2dp"
+                            android:src="@drawable/image_avatar_default_no_border" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="459"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_above="@+id/rlLocation"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:id="@+id/tvListingCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xxlarge" />
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/listings"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xsmall" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:id="@+id/tvFollowerCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xxlarge" />
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/followers"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xsmall" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:id="@+id/tvFollowingCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xxlarge" />
+
+                                <com.pt.treasuretrash.widget.HelveticaTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/following"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_xsmall" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlLocation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="@dimen/margin_padding_normal"
+                            android:layout_marginTop="@dimen/margin_padding_xtiny" >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true" >
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_small"
+                                    android:layout_toRightOf="@+id/ivLocation"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/sign_up_teal"
+                                    android:textSize="@dimen/text_size_normal" />
+
+                                <ImageView
+                                    android:id="@+id/ivLocation"
+                                    android:layout_width="@dimen/button_size_xtiny"
+                                    android:layout_height="@dimen/button_size_xtiny"
+                                    android:layout_alignParentLeft="true"
+                                    android:src="@drawable/icon_profile_location" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="867" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_normal"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:layout_marginTop="@dimen/margin_padding_xnormal"
+                    android:text="@string/selling"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/gvSelling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_normal"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:layout_marginTop="@dimen/margin_padding_xnormal"
+                    android:text="@string/gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/gvGone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

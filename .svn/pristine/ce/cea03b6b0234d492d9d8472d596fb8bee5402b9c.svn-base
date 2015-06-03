@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_expired_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <View
+        android:id="@+id/viewOpaque"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent_70"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="3"
+                android:weightSum="17" >
+
+                <ImageView
+                    android:id="@+id/ivStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:layout_weight="10"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/image_item_gone"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/ivFavorite"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_diamond_solid_blue"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMyPublishedListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="@dimen/button_size_xnormal"
+            android:layout_height="@dimen/button_size_xnormal"
+            android:adjustViewBounds="true"
+            android:background="@drawable/icon_tick" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/llPremium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="215" >
+
+        <ImageView
+            android:id="@+id/ivPremium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="179"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_item_premium"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:id="@+id/lbl_relist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_white_teal"
+        android:paddingLeft="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:text="@string/relist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+    
+    <RelativeLayout
+        android:id="@+id/rlNewMessage"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icon_new_message" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvNewMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xsmall" />
+    </RelativeLayout>
+
+</RelativeLayout>

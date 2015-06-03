@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_background" >
+
+    <ScrollView
+        android:id="@+id/svMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rlTop" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/header_background" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white" />
+
+                    <View
+                        android:id="@+id/viewTransparent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/black_transparent_70"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlDecor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/header_height" >
+
+                        <LinearLayout
+                            android:id="@+id/llPremium"
+                            android:layout_width="@dimen/image_premium_width"
+                            android:layout_height="@dimen/image_premium_height"
+                            android:layout_marginLeft="@dimen/margin_padding_normal"
+                            android:layout_marginTop="@dimen/margin_padding_normal"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/ivPremium"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/image_item_premium"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llGone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="640" >
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="35" />
+
+                            <ImageView
+                                android:id="@+id/ivGone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="128"
+                                android:adjustViewBounds="true"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llDistanceFavorite"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/button_size_xnormal"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/margin_padding_large"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="640" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="218"
+                                android:background="@color/header_background_transparent_30"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="invisible" >
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llAddToFavorite"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="302"
+                                android:background="@drawable/btn_add_to_favorite"
+                                android:orientation="horizontal"
+                                android:visibility="invisible" >
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="120"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/margin_padding_xnormal" >
+
+                                <ImageView
+                                    android:id="@+id/ivAddFavorite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_add_favorite_" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlRelist"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@color/transparent" >
+
+                            <com.pt.treasuretrash.widget.AutoBgButton
+                                android:id="@+id/btnPrev"
+                                android:layout_width="@dimen/button_size_xnormal"
+                                android:layout_height="@dimen/button_size_xnormal"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/btn_prev" />
+
+                            <LinearLayout
+                                android:id="@+id/llRelistSuccess"
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="504" >
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="272"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/btn_relist_success" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llRelist"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/btnNext"
+                                android:layout_toRightOf="@+id/btnPrev"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="504" >
+
+                                    <ImageView
+                                        android:id="@+id/ivItemExpired"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="272"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/btn_item_expired" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="@dimen/margin_padding_small"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="504" >
+
+                                    <ImageView
+                                        android:id="@+id/btnRelist"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="272"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/btn_relist_item" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <com.pt.treasuretrash.widget.AutoBgButton
+                                android:id="@+id/btnNext"
+                                android:layout_width="@dimen/button_size_xnormal"
+                                android:layout_height="@dimen/button_size_xnormal"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/btn_next" />
+                        </RelativeLayout>
+
+                        <com.pt.treasuretrash.widget.HorizontalListView
+                            android:id="@+id/lvThumb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/button_size_large"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_padding_normal"
+                            android:layout_marginLeft="@dimen/margin_padding_normal"
+                            android:background="@color/transparent" />
+
+                        <include layout="@layout/layout_alert_favorite_item" />
+
+                        <include layout="@layout/layout_alert_share_item" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ScrollView
+                    android:id="@+id/svDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_description"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/rlTop"
+                    android:background="@color/header_background" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:paddingBottom="@dimen/margin_padding_small"
+                        android:paddingLeft="@dimen/margin_padding_normal"
+                        android:paddingRight="@dimen/margin_padding_normal"
+                        android:paddingTop="@dimen/margin_padding_small"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_xlarge" />
+                </ScrollView>
+
+                <include layout="@layout/layout_alert_flag_item" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/margin_padding_xxtiny"
+                    android:paddingLeft="@dimen/margin_padding_normal"
+                    android:paddingRight="@dimen/margin_padding_normal"
+                    android:paddingTop="@dimen/margin_padding_xtiny" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="640" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_padding_tiny"
+                                android:layout_weight="66"
+                                android:gravity="left" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/button_size_xxtiny"
+                                    android:layout_height="@dimen/button_size_xxtiny"
+                                    android:src="@drawable/icon_price_details" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_padding_tiny"
+                                android:layout_weight="530" >
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/header_background"
+                                    android:textSize="@dimen/text_size_xlarge" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/margin_padding_normal"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible" >
+
+                                    <ImageView
+                                        android:layout_width="@dimen/button_size_xxtiny"
+                                        android:layout_height="@dimen/button_size_xxtiny"
+                                        android:src="@drawable/icon_location_brown" />
+
+                                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                        android:id="@+id/tvDistance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/margin_padding_tiny"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:textColor="@color/header_background"
+                                        android:textSize="@dimen/text_size_normal" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="44"
+                                android:padding="@dimen/margin_padding_tiny" >
+
+                                <ImageView
+                                    android:id="@+id/ivFlag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/icon_flag"
+                                    android:scaleType="centerInside" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="640" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="66"
+                                android:gravity="left" >
+
+                                <ImageView
+                                    android:id="@+id/ivCategory"
+                                    android:layout_width="@dimen/button_size_xxtiny"
+                                    android:layout_height="@dimen/button_size_xxtiny"
+                                    android:src="@drawable/icon_category_details" />
+                            </LinearLayout>
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/tvCategory"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="574"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xlarge" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_tiny"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="640" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="66"
+                                android:gravity="left" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/button_size_xxtiny"
+                                    android:layout_height="@dimen/button_size_xxtiny"
+                                    android:src="@drawable/icon_location_brown" />
+                            </LinearLayout>
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/tvLocation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="574"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:singleLine="true"
+                                android:textColor="@color/sign_up_teal"
+                                android:textSize="@dimen/text_size_xlarge" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_padding_tiny"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="640" >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="66"
+                                android:gravity="left" >
+
+                                <ImageView
+                                    android:id="@+id/ivSellerAndMessage"
+                                    android:layout_width="@dimen/button_size_xxtiny"
+                                    android:layout_height="@dimen/button_size_xxtiny"
+                                    android:src="@drawable/icon_seller_details" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="574"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvSeller"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/sign_up_teal"
+                                    android:textSize="@dimen/text_size_xlarge" />
+
+                                <ImageView
+                                    android:id="@+id/ivReward"
+                                    android:layout_width="@dimen/button_size_small"
+                                    android:layout_height="@dimen/button_size_small"
+                                    android:layout_marginLeft="@dimen/margin_padding_small" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/layout_alert_contact_seller" />
+
+                <include layout="@layout/layout_alert_seller_profile" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBotttom"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/layout_bottom_height" >
+
+                <RelativeLayout
+                    android:id="@+id/rlContactSeller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/btnContactSeller"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bg_contact_seller"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="640" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="66" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvContactSeller"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="574"
+                            android:paddingLeft="@dimen/margin_padding_xxsmall"
+                            android:text="@string/contact_seller"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_xhuge" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:id="@+id/llCloseContactSeller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/sign_up_teal"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/margin_padding_normal"
+                            android:paddingRight="@dimen/margin_padding_normal" >
+
+                            <ImageView
+                                android:id="@+id/ivContactSeller"
+                                android:layout_width="@dimen/button_size_xlarge"
+                                android:layout_height="@dimen/button_size_xlarge"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/btn_close_contact_seller" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/btnEditItem"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/sign_up_teal"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/ivEdit"
+                            android:layout_width="@dimen/button_size_xsmall"
+                            android:layout_height="@dimen/button_size_xsmall"
+                            android:background="@drawable/icon_pencil" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_small"
+                            android:gravity="center"
+                            android:text="@string/edit_item"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnItemGone"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/sign_up_teal"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/ivItemGone"
+                            android:layout_width="@dimen/button_size_xsmall"
+                            android:layout_height="@dimen/button_size_xsmall"
+                            android:background="@drawable/icon_item_gone" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvItemGone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_small"
+                            android:gravity="center"
+                            android:text="@string/item_gone"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llReportInapproriate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/header_background_transparent_80"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1136" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="854" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llReportOptions"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="282"
+            android:background="@color/sign_up_light_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_normal" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnConfirmReport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/margin_padding_small"
+                android:text="@string/report_inapproriate"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnCancelReport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:background="@color/white"
+                android:padding="@dimen/margin_padding_small"
+                android:text="@string/cancel"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xlarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEditOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/header_background_transparent_80"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1136" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="854" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="282"
+            android:background="@color/sign_up_light_gray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_normal" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/margin_padding_small"
+                android:text="@string/edit_item"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnDelete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:background="@color/white"
+                android:padding="@dimen/margin_padding_small"
+                android:text="@string/delete_item"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xlarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@drawable/bg_header_gradient"
+            android:paddingLeft="@dimen/margin_padding_small" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/button_size_normal"
+                android:layout_height="@dimen/button_size_normal"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_padding_small"
+                android:layout_marginTop="@dimen/margin_padding_tiny"
+                android:background="@drawable/btn_back" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_padding_tiny"
+                android:layout_toLeftOf="@+id/llShare"
+                android:layout_toRightOf="@+id/btnBack"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xhuge" />
+
+            <LinearLayout
+                android:id="@+id/llShare"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:paddingRight="@dimen/margin_padding_small" >
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@drawable/btn_share" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_share_options" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_full_gallery" />
+
+</RelativeLayout>

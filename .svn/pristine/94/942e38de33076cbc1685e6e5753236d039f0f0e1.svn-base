@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/bg_header_gradient"
+        android:paddingLeft="@dimen/margin_padding_small" >
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/margin_padding_small"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:background="@drawable/btn_back" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_padding_tiny"
+            android:layout_toLeftOf="@+id/llShare"
+            android:layout_toRightOf="@+id/btnBack"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_padding_xnormal"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingTop="@dimen/margin_padding_large" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivUser"
+                    android:layout_width="@dimen/button_size_xnormal"
+                    android:layout_height="@dimen/button_size_xnormal"
+                    android:background="@drawable/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:orientation="vertical" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/conversation"
+                        android:textColor="@color/sign_up_teal"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/margin_padding_tiny"
+                        android:text="@string/conversation"
+                        android:textColor="@color/header_background"
+                        android:textSize="@dimen/text_size_xnormal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvMessageDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:layout_weight="1"
+                android:divider="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_small" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/message_input_box_height"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="8" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightEditText
+                        android:id="@+id/etInputMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/margin_padding_tiny"
+                        android:background="@drawable/bg_input_message"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/header_background"
+                        android:textSize="@dimen/text_size_xlarge" />
+                </LinearLayout>
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnSendMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_send_message" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

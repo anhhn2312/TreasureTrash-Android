@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/margin_padding_tiny" >
+
+    <ImageView
+        android:id="@+id/img_take_photo"
+        android:layout_width="@dimen/width_icon_large"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/addlisting_icon_addimage" />
+
+</LinearLayout>

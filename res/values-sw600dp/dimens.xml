@@ -1,0 +1,150 @@
+<resources>
+
+    <bool name="isTablet">true</bool>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_title_signup_login">50sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="header_height">70dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_tiny">8.3sp</dimen>
+    <dimen name="text_size_xtiny">11.6sp</dimen>
+    <dimen name="text_size_xxtiny">15sp</dimen>
+    <dimen name="text_size_small">16.6sp</dimen>
+    <dimen name="text_size_xsmall">18.3sp</dimen>
+    <dimen name="text_size_xxsmall">20sp</dimen>
+    <dimen name="text_size_normal">21.6sp</dimen>
+    <dimen name="text_size_xnormal">23.3sp</dimen>
+    <dimen name="text_size_xxnormal">26.6sp</dimen>
+    <dimen name="text_size_large">28.3sp</dimen>
+    <dimen name="text_size_xlarge">31.6sp</dimen>
+    <dimen name="text_size_xllarge">32.0sp</dimen>
+    <dimen name="text_size_xxlarge">35sp</dimen>
+    <dimen name="text_size_huge">38.3sp</dimen>
+    <dimen name="text_size_xhuge">41.6sp</dimen>
+    <dimen name="text_size_xxhuge">45sp</dimen>
+    <dimen name="text_size_xxxhuge">48.3sp</dimen>
+    
+    <dimen name="text_size_category_first">24sp</dimen>
+    <dimen name="text_size_category_second">22sp</dimen>
+
+    <!-- Margin & padding -->
+    <dimen name="margin_padding_tiny">6dp</dimen>
+    <dimen name="margin_padding_xtiny">10dp</dimen>
+    <dimen name="margin_padding_xxtiny">13dp</dimen>
+    <dimen name="margin_padding_small">16dp</dimen>
+    <dimen name="margin_padding_xsmall">20dp</dimen>
+    <dimen name="margin_padding_xxsmall">23dp</dimen>
+    <dimen name="margin_padding_normal">26dp</dimen>
+    <dimen name="margin_padding_xnormal">30dp</dimen>
+    <dimen name="margin_padding_xxnormal">33dp</dimen>
+    <dimen name="margin_padding_large">36dp</dimen>
+    <dimen name="margin_padding_xlarge">39dp</dimen>
+    <dimen name="margin_padding_xxlarge">42dp</dimen>
+    <dimen name="margin_padding_xxxlarge">45dp</dimen>
+    <dimen name="margin_padding_huge">60dp</dimen>
+    <dimen name="margin_padding_xhuge">75dp</dimen>
+    <dimen name="margin_padding_xxhuge">100dp</dimen>
+    <dimen name="button_size_tiny">16.6dp</dimen>
+    <dimen name="button_size_xtiny">25dp</dimen>
+    <dimen name="button_size_xxtiny">30dp</dimen>
+    <dimen name="button_size_small">33.3dp</dimen>
+    <dimen name="button_size_xsmall">41.6dp</dimen>
+    <dimen name="button_size_normal">50dp</dimen>
+    <dimen name="button_size_lnormal">58.3dp</dimen>
+    <dimen name="button_size_xnormal">66.6dp</dimen>
+    <dimen name="button_size_xxnormal">75dp</dimen>
+    <dimen name="button_size_large">60dp</dimen>
+    <dimen name="button_size_xlarge">68dp</dimen>
+    <dimen name="button_size_xxlarge">75dp</dimen>
+    <dimen name="button_size_huge">133.3dp</dimen>
+    <dimen name="button_size_xhuge">150dp</dimen>
+    <dimen name="button_size_xxhuge">166.6dp</dimen>
+    <dimen name="button_summit_width">60dp</dimen>
+    <dimen name="button_summit_height">30dp</dimen>
+
+    <!-- Image -->
+    <dimen name="image_status_width">70dp</dimen>
+    <dimen name="image_status_height">35dp</dimen>
+
+    <!-- Left Menu -->
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">83.3dp</dimen>
+    <dimen name="left_menu_icon_width">40dp</dimen>
+    <dimen name="left_menu_icon_height">40dp</dimen>
+    <dimen name="left_menu_item_text_size">25dp</dimen>
+    <dimen name="left_menu_item_padding_left">2dp</dimen>
+    <dimen name="left_menu_item_padding_right">8dp</dimen>
+    <dimen name="left_menu_item_padding_top">20dp</dimen>
+    <dimen name="left_menu_item_padding_bottom">20dp</dimen>
+    <dimen name="left_menu_item_border_width">2dp</dimen>
+    <dimen name="menu_user_avatar_size">80dp</dimen>
+
+    <!-- Width, height -->
+    <dimen name="width_icon_tiny">16dp</dimen>
+    <dimen name="height_icon_tiny">16dp</dimen>
+    <dimen name="width_icon_xtiny">25dp</dimen>
+    <dimen name="height_icon_xtiny">25dp</dimen>
+    <dimen name="width_icon_small">33dp</dimen>
+    <dimen name="height_icon_small">33dp</dimen>
+    <dimen name="width_icon_xsmall">41dp</dimen>
+    <dimen name="height_icon_xsmall">41dp</dimen>
+    <dimen name="width_icon_normal">50dp</dimen>
+    <dimen name="height_icon_normal">50dp</dimen>
+    <dimen name="width_icon_xlarge">133dp</dimen>
+    <dimen name="height_icon_xlarge">133dp</dimen>
+    <dimen name="height_listing_header">66dp</dimen>
+    <dimen name="height_listing_category">50dp</dimen>
+    <dimen name="height_listing_footer">83dp</dimen>
+    <dimen name="height_listing_add_photo_bar">133dp</dimen>
+    <dimen name="height_listing_choose_type_bar">83dp</dimen>
+    <dimen name="height_row_profile">66dp</dimen>
+    <dimen name="width_ll_transparent">83dp</dimen>
+
+    <!-- Action Bar -->
+    <dimen name="action_bar_iv_menu_size">20dp</dimen>
+    <dimen name="action_bar_btn_menu_size">60dp</dimen>
+    <dimen name="action_bar_btn_search_size">40dp</dimen>
+    <dimen name="action_bar_et_search_width">150dp</dimen>
+    <dimen name="action_bar_btn_close_size">30dp</dimen>
+
+    <!-- HomeActivity -->
+    <dimen name="layout_bottom_height">80dp</dimen>
+
+    <!-- ItemDetailActivity -->
+    <dimen name="image_premium_width">333dp</dimen>
+    <dimen name="image_premium_height">83dp</dimen>
+
+    <!-- sign up & login -->
+    <dimen name="layout_margin_top">133dp</dimen>
+    <dimen name="login_text_button_margin_left">80dp</dimen>
+    <dimen name="signup_btn_width">433dp</dimen>
+    <dimen name="signup_btn_height">73dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_edittext_width">350dp</dimen>
+    <dimen name="login_go_btn_size">80dp</dimen>
+    <dimen name="webview_message_dialog_height">500dp</dimen>
+    <dimen name="width_icon_large">116dp</dimen>
+    <dimen name="height_icon_large">70dp</dimen>
+    <!-- add a listing -->
+    <dimen name="image_view_pager">400dp</dimen>
+    <dimen name="height_description">140dp</dimen>
+    <dimen name="category_parent_magin">75dp</dimen>
+    <dimen name="category_children_magin">100dp</dimen>
+
+    <!-- MessageList -->
+    <dimen name="layout_message_thread_width">500dp</dimen>
+    <dimen name="message_input_box_height">66dp</dimen>
+
+    <!-- FavoriteFragment -->
+    <dimen name="favorite_alert_image_height">233dp</dimen>
+
+    <!-- Activity feed -->
+    <dimen name="seller_profile_image_size">85dp</dimen>
+    <dimen name="row_follower_height">57dp</dimen>
+
+</resources>

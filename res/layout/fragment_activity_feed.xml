@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:layout_marginRight="@dimen/margin_padding_normal"
+        android:layout_marginTop="@dimen/margin_padding_xxtiny" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/activity_feed"
+            android:textColor="@color/sign_up_teal"
+            android:textSize="@dimen/text_size_xxlarge" />
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="@dimen/button_size_xsmall"
+            android:layout_height="@dimen/button_size_xsmall"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_refresh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="989">
+
+        <LinearLayout
+            android:id="@+id/llFeedList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_padding_xxnormal"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#4d4d4d" />
+
+            <ListView
+                android:id="@+id/lvFeed"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInviteFriend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:orientation="vertical" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_normal"
+                android:text="@string/message_alert_feed_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxnormal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_xlarge"
+                android:background="@color/sign_up_teal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_padding_xnormal"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:paddingRight="@dimen/margin_padding_small"
+                android:paddingTop="@dimen/margin_padding_normal"
+                android:visibility="visible" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/invite_friends"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_large"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnInviteFb"
+                            android:layout_width="@dimen/button_size_huge"
+                            android:layout_height="@dimen/button_size_huge"
+                            android:background="@drawable/ic_facebook_white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnInviteGoogle"
+                            android:layout_width="@dimen/button_size_huge"
+                            android:layout_height="@dimen/button_size_huge"
+                            android:background="@drawable/ic_google_plus_white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnInviteEmail"
+                            android:layout_width="@dimen/button_size_huge"
+                            android:layout_height="@dimen/button_size_huge"
+                            android:background="@drawable/ic_email_white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" >
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnInviteMessage"
+                            android:layout_width="@dimen/button_size_huge"
+                            android:layout_height="@dimen/button_size_huge"
+                            android:background="@drawable/ic_message_white"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_huge" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_padding_large"
+        android:paddingTop="@dimen/margin_padding_xnormal" >
+
+        <com.pt.treasuretrash.widget.HelveticaBoldTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_padding_large"
+            android:paddingRight="@dimen/margin_padding_large"
+            android:text="@string/dialog_mark_gone_header"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_huge"/>
+
+        <com.pt.treasuretrash.widget.HelveticaTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_xnormal"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_padding_large"
+            android:paddingRight="@dimen/margin_padding_large"
+            android:text="@string/dialog_mark_gone_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_huge" />
+
+        <com.pt.treasuretrash.widget.HelveticaBoldTextView
+            android:id="@+id/tvTreasureTrash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:paddingLeft="@dimen/margin_padding_large"
+            android:paddingRight="@dimen/margin_padding_large"
+            android:text="@string/treasure_backslash_trash"
+            android:textColor="@color/sign_up_teal"
+            android:textSize="@dimen/text_size_huge"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_xxsmall"
+            android:background="#b09f97" />
+        
+        <com.pt.treasuretrash.widget.HelveticaBoldTextView
+            android:id="@+id/tvEbay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_xxsmall"
+            android:paddingLeft="@dimen/margin_padding_large"
+            android:paddingRight="@dimen/margin_padding_large"
+            android:gravity="center"
+            android:text="@string/ebay_gumtree"
+            android:textColor="@color/sign_up_teal"
+            android:textSize="@dimen/text_size_huge"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_xxsmall"
+            android:background="#b09f97" />
+        
+        <com.pt.treasuretrash.widget.HelveticaBoldTextView
+            android:id="@+id/tvOther"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_padding_xxsmall"
+            android:paddingLeft="@dimen/margin_padding_large"
+            android:paddingRight="@dimen/margin_padding_large"
+            android:text="@string/other"
+            android:textColor="@color/sign_up_teal"
+            android:textSize="@dimen/text_size_huge"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

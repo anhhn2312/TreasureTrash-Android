@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_black_wood"
+    android:orientation="vertical"
+    android:weightSum="1136" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="26" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:layout_marginLeft="@dimen/margin_padding_xxnormal"
+        android:layout_marginRight="@dimen/margin_padding_xxnormal"
+        android:orientation="horizontal">
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnFollowing" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_following_selected"
+            android:gravity="center"
+            android:text="@string/following_menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge"/>
+        
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnFollower" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_follower"
+            android:gravity="center"
+            android:text="@string/followers_menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="51" />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="989"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_padding_xxnormal"
+        android:paddingBottom="@dimen/margin_padding_xxnormal">
+        <!-- <View android:layout_width="fill_parent"
+            android:layout_height="0.0000005dp"
+            android:background="#4d4d4d"/> -->
+        <ListView 
+            android:id="@+id/lvUsers"
+            android:divider="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

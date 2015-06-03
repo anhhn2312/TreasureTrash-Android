@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutWrapperShareSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_padding_normal" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_settings"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_huge" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:background="@color/sign_up_teal" />
+
+    <LinearLayout
+        android:id="@+id/ll_connect_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_icon_normal"
+        android:layout_marginBottom="@dimen/margin_padding_xxtiny"
+        android:layout_marginTop="@dimen/margin_padding_xxtiny"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgFacebookShare"
+            android:layout_width="@dimen/height_icon_normal"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_facebook_grey" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/lblFaceBookShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_padding_tiny"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/connect_your_account"
+            android:textColor="@color/gray_share_setting"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_narrow_right_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_connect_google_plus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_icon_normal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgGoogleShare"
+            android:layout_width="@dimen/height_icon_normal"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_google_plus_gray" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/lblGoogleShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_padding_tiny"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/connect_your_account"
+            android:textColor="@color/gray_share_setting"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_icon_tiny"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_narrow_right_2" />
+    </LinearLayout>
+
+</LinearLayout>

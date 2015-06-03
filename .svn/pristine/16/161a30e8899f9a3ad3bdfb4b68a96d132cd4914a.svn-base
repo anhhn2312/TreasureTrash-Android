@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_click_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_padding_normal"
+    android:paddingRight="@dimen/margin_padding_normal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llContainer"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/button_size_xsmall"
+            android:layout_height="@dimen/button_size_xsmall"
+            android:src="@drawable/icon_category_expand"
+            android:visibility="invisible" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:singleLine="true"
+            android:textColor="@color/sign_up_teal"
+            android:textSize="@dimen/text_size_xlarge" />
+    </LinearLayout>
+
+</LinearLayout>

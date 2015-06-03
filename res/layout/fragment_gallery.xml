@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/margin_padding_normal"
+            android:paddingLeft="@dimen/margin_padding_small"
+            android:paddingRight="@dimen/margin_padding_small"
+            android:paddingTop="@dimen/margin_padding_normal" >
+
+            <RelativeLayout
+                android:id="@+id/rlCategoryInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvCategoryName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ivCategoryArrow"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingRight="@dimen/margin_padding_normal"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <ImageView
+                    android:id="@+id/ivCategoryArrow"
+                    android:layout_width="@dimen/button_size_xxtiny"
+                    android:layout_height="@dimen/button_size_xxtiny"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_category_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlEditSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/signup_btn_height"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:hint="@string/search_again"
+                    android:textColorHint="@color/header_background"
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:layout_marginRight="@dimen/margin_padding_normal"
+                    android:layout_toLeftOf="@+id/btnSearch"
+                    android:background="@color/white"
+                    android:textColor="@color/header_background"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnSearch"
+                    android:layout_width="@dimen/signup_btn_height"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_search_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.pt.treasuretrash.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pullGvGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:verticalSpacing="0dp"
+            ptr:ptrMode="both" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_share_published_listing" />
+
+</RelativeLayout>

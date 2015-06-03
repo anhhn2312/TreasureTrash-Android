@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_cancel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@drawable/bg_coach_mark_brown" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_padding_large"
+        android:background="@drawable/bg_white_transparent"
+        android:padding="@dimen/margin_padding_normal" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_padding_normal"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:layout_marginRight="@dimen/margin_padding_small"
+            android:gravity="center_horizontal"
+            android:text="@string/would_you_like_to_use_single_slot"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblTitle"
+            android:orientation="horizontal" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/btnNegative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding_small"
+                android:layout_weight="1"
+                android:background="@color/bg_dialog_button_light_gray"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding_tiny"
+                android:paddingTop="@dimen/margin_padding_tiny"
+                android:text="@string/no_upper"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/btnPositive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_weight="1"
+                android:background="@color/sign_up_teal"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_padding_tiny"
+                android:paddingTop="@dimen/margin_padding_tiny"
+                android:text="@string/yes_upper"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxlarge" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

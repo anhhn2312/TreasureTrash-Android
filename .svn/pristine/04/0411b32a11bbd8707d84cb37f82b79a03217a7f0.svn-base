@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="message_loading">Loading...</string>
+    <string name="message_please_wait">Please wait...</string>
+    <string name="message_network_is_unavailable">Network is unavailable.</string>
+    <string name="message_server_error">There is an error from server, please try again.</string>
+    <string name="message_error_cant_extract_server_response">Error. Can\'t extract server\'s response data.</string>
+    <string name="message_exit_app">Exit app</string>
+    <string name="message_exit_content">Do you want to exit app?</string>
+    <string name="text_log_out">Log out</string>
+    <string name="text_confirm_exit">Do you want to log out?</string>
+    <string name="text_btn_ok">OK</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_btn_cancel">Cancel</string>
+    <string name="text_btn_flag">Flag</string>
+    <string name="text_btn_block">Block</string>
+    <string name="text_btn_dont_block">"Don't block"</string>
+    <string name="please_wait_message">Please wait...</string>
+    <string name="server_error">There is an error from server, please try again.</string>
+    <string name="json_server_error">Communication error. Please try again!</string>
+    <string name="no_more_data_to_show">No more data to show</string>
+    <string name="message_location_not_allowed">"Treasure Trash is a location based trading app. To see what's near you, or to list an item, you need to allow your location.\n \nTo do this, go into your \"Settings\" hit \"Privacy\" and then turn this on under \"Location Services\""</string>
+    <string name="message_add_favorite_success">This item has been added to your favorite.</string>
+    <string name="message_remove_favorite_success">This item has been removed from your favorite.</string>
+    <string name="message_confirm_flag_item">Are you sure you want to flag this item as inappropriate?</string>
+    <string name="message_flag_success">This item has been reported as inappropriate.</string>
+    <string name="message_unflag_success">This item has been reported as appropriate.</string>
+    <string name="message_alert_flag">"To flag an item, you need\nto have an account."</string>
+    <string name="message_alert_share">"To share a listing, you need\nto have an account."</string>
+    <string name="message_alert_contact_seller">"To contact a seller, you need\nto have an account."</string>
+    <string name="message_alert_seller_profile">"To view a seller's profile, you need\nto have an account."</string>
+    <string name="message_alert_follow_seller">"To follow a seller, you need\nto have an account."</string>
+    <string name="message_alert_favorite">"To favorite an item, you need\nto have an account."</string>
+    <string name="message_alert_messaging">"To view message, you need\nto have an account."</string>
+    <string name="message_alert_saved_item">"To view saved items, you need\nto have an account."</string>
+    <string name="message_alert_feed">"To view activity feed, you need\nto have an account."</string>
+    <string name="message_alert_add_listing">"To add a listing, you need\nto have an account."</string>
+    <string name="message_alert_integer_price">Price must be an integer</string>
+    <string name="message_alert_category">"To turn categories on and off, you need to have an account."</string>
+    <string name="message_share">Share this</string>
+    <string name="message_share_published_listing_info">"Your listing will remain active for 7\ndays. Remember to mark it as\ngone when someone grabs it"</string>
+    <string name="message_share_this_listing">Share this listing</string>
+    <string name="message_share_item">Hey, I\'ve found something you may like on the Treasure trash app:</string>
+    <string name="message_sell_your_trash_find_a_treasure">sell your trash, find a treasure</string>
+    <string name="message_alert_empty_message">Please enter message before sending.</string>
+    <string name="message_alert_block_user">"If you block this person you will delete all message history"</string>
+    <string name="message_alert_block_success">This user has been blocked.</string>
+    <string name="message_alert_general_error">Opps, something went wrong. Please try again.</string>
+    <string name="message_alert_invalid_item">Unfortunately the listing has been removed</string>
+    <string name="message_alert_listing_removed">Unfortunately the listing has been removed</string>
+    <string name="message_alert_share_successful">This listing has been shared successfully.</string>
+    <string name="message_alert_not_found_connection">"We've lost you! Check you have a connection and try again."</string>
+    <string name="message_alert_feed_1">"You haven't followed anyone.\n\nWhen you go to a profile page, tap \"Follow\"\nand they will appear here with their items\nfor sale.\n\nTo remove a favourite seller, tap \"Unfollow\"."</string>
+    <string name="message_invite_friend">"Hey, I've discovered Treasure Trash, it's a community focused location based app for trading goods. It's free to download on iPhone and Android"</string>
+    <string name="message_confirm_delete">Are you sure you want to permanently delete your listing?</string>
+    <string name="message_delete_item_success">Your item has been deleted successfully!</string>
+    <string name="message_alert_being_block_user">You have been blocked by </string>
+    <string name="message_share_successfully">Share successfully.</string>
+    <string name="message_invite_successfully">Invite successfully.</string>
+    <string name="message_confirm_change_email_successfully">Your email address has been confirmed</string>
+    <string name="message_alert_no_favorite_item">"You have not favourited any items.\n\nWhen you see something you like,\ntap the diamond over the image.\nWhen it turns blue, it's a favourite."</string>
+    <string name="message_alert_all_image_upload_failed">Sorry, the listing failed to upload due to a connectivity issue. You may need to try again</string>
+
+</resources>

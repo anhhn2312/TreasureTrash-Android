@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register_menu"
+    android:orientation="vertical" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_title_signup_login" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_large" >
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnLoginFacebook"
+            android:layout_width="@dimen/signup_btn_width"
+            android:layout_height="@dimen/signup_btn_height"
+            android:background="@drawable/btn_signup_facebook"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/login_text_button_margin_left"
+            android:text="@string/login_with_facebook"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxlarge" />
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnLoginGoogle"
+            android:layout_width="@dimen/signup_btn_width"
+            android:layout_height="@dimen/signup_btn_height"
+            android:layout_marginTop="@dimen/margin_padding_xsmall"
+            android:background="@drawable/btn_signup_google"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/login_text_button_margin_left"
+            android:text="@string/login_with_google_plus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxlarge" />
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnLoginNormal"
+            android:layout_width="@dimen/signup_btn_width"
+            android:layout_height="@dimen/signup_btn_height"
+            android:layout_marginTop="@dimen/margin_padding_xsmall"
+            android:background="@drawable/btn_signup_normal"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/login_text_button_margin_left"
+            android:text="@string/login_with_email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxlarge" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_bottom_height"
+        android:paddingLeft="@dimen/margin_padding_large"
+        android:paddingRight="@dimen/margin_padding_large" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_padding_small"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_padding_small"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_black_wood"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llLocationNotAllowed"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_location_not_allowed"
+        android:paddingLeft="@dimen/margin_padding_normal"
+        android:paddingRight="@dimen/margin_padding_normal"
+        android:paddingTop="@dimen/margin_padding_large"
+        android:visibility="gone" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_location_not_allowed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNoInternetConnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_xhuge"
+                android:paddingLeft="@dimen/margin_padding_xsmall"
+                android:paddingRight="@dimen/margin_padding_xsmall"
+                android:text="@string/error_no_conection"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxnormal" />
+
+            <TextView
+                android:id="@+id/btnRetry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_padding_xhuge"
+                android:layout_marginLeft="@dimen/margin_padding_xhuge"
+                android:layout_marginRight="@dimen/margin_padding_xhuge"
+                android:background="@color/sign_up_teal"
+                android:gravity="center"
+                android:padding="@dimen/margin_padding_small"
+                android:text="@string/tap_to_retry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xlarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/margin_padding_xhuge"
+                android:src="@drawable/icon_wifi" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

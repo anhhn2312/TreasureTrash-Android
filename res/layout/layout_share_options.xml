@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llShareOptions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sign_up_teal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_padding_large"
+    android:paddingLeft="@dimen/margin_padding_small"
+    android:paddingRight="@dimen/margin_padding_small"
+    android:paddingTop="@dimen/margin_padding_normal"
+    android:visibility="invisible" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/message_share"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxlarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/tvShareFb"
+                android:layout_width="@dimen/button_size_huge"
+                android:layout_height="@dimen/button_size_huge"
+                android:background="@drawable/ic_facebook_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onShareFacebook"
+                android:textSize="@dimen/text_size_huge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/tvShareGoogle"
+                android:layout_width="@dimen/button_size_huge"
+                android:layout_height="@dimen/button_size_huge"
+                android:background="@drawable/ic_google_plus_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onShareGoogle"
+                android:textSize="@dimen/text_size_huge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/tvShareEmail"
+                android:layout_width="@dimen/button_size_huge"
+                android:layout_height="@dimen/button_size_huge"
+                android:background="@drawable/ic_email_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onShareEmail"
+                android:textSize="@dimen/text_size_huge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.pt.treasuretrash.widget.AutoBgButton
+                android:id="@+id/tvShareMessage"
+                android:layout_width="@dimen/button_size_huge"
+                android:layout_height="@dimen/button_size_huge"
+                android:background="@drawable/ic_message_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onShareMessage"
+                android:textSize="@dimen/text_size_huge" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

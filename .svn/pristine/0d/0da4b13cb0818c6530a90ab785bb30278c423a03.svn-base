@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Walkthrough -->
+    <string name="walkthrouh_location_title">Treasure\\Trash would like to use your current location.</string>
+    <string name="walkthrough_location_content">Your location will be used to find nearby items.</string>
+    <string name="trash">Trash.</string>
+    <string name="treasure">Treasure.</string>
+    <string name="sell_your_trash">"Sell your trash.\nFind a treasure.\nNear you."</string>
+    <string name="skip">Skip</string>
+    <string name="text_greater"> ></string>
+
+    <!-- Sign up -->
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="sign_up_with_google">Sign up with Google+</string>
+    <string name="sign_up_with_email">Sign up with email</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get started</string>
+    <string name="close">Close</string>
+    <string name="forgot_password_title">Forgot password?</string>
+    <string name="Send_password">Send password</string>
+    <string name="sign_up_title">Sign up.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="few_more_detail_title">A few more details.</string>
+    <string name="accept">Accept</string>
+    <string name="sign_in">Sign in</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="login">Login</string>
+    <string name="yes_upper">YES</string>
+    <string name="no_upper">NO</string>
+    <string name="login_title">Login.</string>
+    <string name="username">Username</string>
+    <string name="your_name">Your name</string>
+    <string name="your_name_2">Your name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="default_location">Default location</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="_private">PRIVATE</string>
+    <string name="show_password">SHOW PASSWORD</string>
+    <string name="hide_password">HIDE PASSWORD</string>
+    <string name="enter_email">Enter email</string>
+    <string name="term_condition">Terms &amp; conditions</string>
+    <string name="text_before_term_condition">By signing up you agree to our</string>
+    <string name="text_we_respect">We respect </string>
+    <string name="your_privacy">your privacy</string>
+    <string name="error_sign_up_email_existed_account">That email is already taken, so you may already have a profile. Reset your password by hitting the link on the Login screen</string>
+    <string name="error_sign_up_username_existed">Ooh, that sucks! The username you want is already taken. Try another one</string>
+    <string name="error_sign_up_social_user_existed_facebook">You may have already signed up with your Facebook account. Please try logging in.</string>
+    <string name="error_sign_up_social_user_existed_google">You may have already signed up with your Google+ account. Please try logging in.</string>
+    <string name="error_default_message">Oops, something went wrong. Please try again.</string>
+    <!-- login -->
+    <string name="text_or">OR</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google_plus">Login with Google+</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="error_login_invalid">The username or password is incorrect!</string>
+    <string name="error_social_account_not_register">Please create an account before logging in</string>
+    <string name="username_and_email">Username or email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_successfull">Logged In Successfully</string>
+    <string name="register_successfull">Registration Successful</string>
+    <string name="message_reset_password">We\'ve sent your temporary password to your email address</string>
+
+    <!-- Left menu -->
+    <string name="hi_there_dot">Hi there.</string>
+    <string name="create_an_account">Create an account or login.</string>
+    <string name="your_details">Your details</string>
+    <string name="share_settings">Share settings</string>
+    <string name="location">Search location</string>
+    <string name="blocked_member">Blocked members</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Feedback</string>
+    <string name="faq_tips">FAQ &amp; Tips</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_of_use">Term of Use</string>
+    <string name="edit_your_details">Edit your details</string>
+    <string name="change_location">Change Location</string>
+    <string name="my_name">My Name</string>
+    <string name="Change">Change</string>
+    <string name="relist">Relist?</string>
+    <string name="unblock">Unblock</string>
+    <string name="mail_feedback">feedback@treasuretrashapp.com</string>
+    <string name="updated_email_successfull">An email has been sent to your new email address. Please confirm this is correct.</string>
+    <string name="one_day_to_go">1 day to go</string>
+    <!-- search location -->
+    <string name="hint_search_location">Search in a different location</string>
+    <string name="note_search_location">Note: You can temporarily change your location to search in a different area. This will update your location in the grid. Remember to remove filter when done.</string>
+    <!-- error string -->
+    <string name="error_empty_name">Please enter your name</string>
+    <string name="error_empty_username">Please enter your username</string>
+    <string name="error_have_spaces">Can\'t contain spaces</string>
+    <string name="error_empty_email">Please enter your email</string>
+    <string name="error_email_not_valid">Please enter a valid email address</string>
+    <string name="error_empty_password">Please enter your password</string>
+    <string name="error_password_6_characters">Please ensure your password is at least 6 characters long</string>
+    <string name="error_birthday_empty">Please select birthday</string>
+    <string name="error_facebook_existed">Ooh, that sucks! The username you want is already taken. Try another one</string>
+    <string name="error_google_existed">Ooh, that sucks! The username you want is already taken. Try another one</string>
+    <string name="error_forgot_password">Oops, something went wrong. Please try again.</string>
+    <string name="error_facebook_not_install">Facebook App is not installed on your device!</string>
+
+    <!-- Item Detail -->
+    <string name="contact_seller">Contact seller</string>
+    <string name="follow_seller">Follow seller</string>
+    <string name="edit_item">Edit item</string>
+    <string name="item_gone">Item gone</string>
+    <string name="relist_item">Relist</string>
+    <string name="delete_item">Delete item</string>
+    <string name="report_inapproriate">Report inapproriate</string>
+
+    <!-- Message -->
+    <string name="messages">Messages</string>
+    <string name="your_listings">Your listings</string>
+    <string name="your_enquiries">Your enquiries</string>
+    <string name="expired_items">Expired items</string>
+    <string name="your_posting">Your postings</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="confirm_delete">Delete?</string>
+
+    <!-- Manage Listing -->
+    <string name="dialog_mark_gone_header">Where did it go?</string>
+    <string name="dialog_mark_gone_content">"We'd appreciate you letting us know how your item was sold."</string>
+    <string name="treasure_backslash_trash">Treasure\\Trash</string>
+    <string name="ebay_gumtree">eBay, Gumtree</string>
+    <string name="other">Other</string>
+    <string name="rate_treasure_trash">Rate Treasure\\Trash</string>
+    <string name="rate_content">"Congratulations on selling your item. We\'d love to know what you think"</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="remind_me_later">Remind Me Later</string>
+    <string name="rate_it_now">Rate It Now</string>
+
+    <!-- Add a Listing -->
+    <string name="continue_">Continue</string>
+    <string name="preview_listing">Preview listing</string>
+    <string name="publish_listing">Publish listing</string>
+    <string name="hint_title_item_left">Item title</string>
+    <string name="hint_title_item_right">(up to 25 characters)</string>
+    <string name="add_up_to">Add up to</string>
+    <string name="add_3_more_for_099">Add 3 more for $0.99</string>
+    <string name="hint_item_description_left">Item description</string>
+    <string name="hint_item_description_right">(up to 160 character)</string>
+    <string name="hint_price">Price ($)</string>
+    <string name="choose_category">Choose a category</string>
+    <string name="Change_location">Change search location</string>
+    <string name="choose_item_location">Choose item location</string>
+    <string name="change_item_location">Change search location</string>
+    <string name="change_default_location">Change default location</string>
+    <string name="change_your_location">Change your location</string>
+    <string name="demo_location">Cau giay,Ha Noi, Viet Nam</string>
+    <string name="error_timeout_publish_item">Sorry, the listings failed to upload due to a connectivity issue. You may need to try again</string>
+
+    <!-- favourite screen -->
+    <string name="your_active_favourite">Your active favourites</string>
+    <string name="your_expired_favourite">Your expired favourites</string>
+    <string name="your_gone_favourite">Your gone favourites</string>
+
+    <!-- Others -->
+    <string name="find_local_treasure">Find local treasures</string>
+    <string name="error_no_conection">That\'s weird. It seems you don\'t have an internet connection.</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="change">(<u>change</u>)</string>
+    <string name="current_location"><u>Current location</u></string>
+    <string name="conversation">Conversation</string>
+    <string name="cant_change">CAN\'T CHANGE</string>
+    <string name="receive_email">Receive email newsletter</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_profile_image">Change profile image</string>
+    <string name="choose_image_item">Choose image item</string>
+    <string name="your_5_free_listings">Your 5 free listings</string>
+    <string name="your_addtional_listings">Your additional listings</string>
+    <string name="message_have_ad_slot">Ad slots are only activated once you publish a listing and will last until you mark the item as \"gone\".</string>
+    <string name="buy_a_pack_of_additional_listings">Buy a pack of additional listings</string>
+    <string name="expired">Expired</string>
+    <string name="select_a_pack">Select a pack</string>
+    <string name="message_have_not_ad_slot">A listing will last for 14 days once your ad is published. Ad slots are only activated once you publish a listing.</string>
+    <string name="you_are_about_to_purchase">You\'re about to purchase a pack of additional listings.\nPlease confirm selection.</string>
+    <string name="manage_blocked_users">Manage blocked users</string>
+    <string name="tab_the_username_or_icon_to_unblock_user">Blocked users</string>
+    <string name="you_havent_blocked_any_members">You haven\'t blocked any members</string>
+    <string name="buy_10_slots">10 slots for $8.00</string>
+    <string name="buy_10_slots_confirm">Buy a 10 pack for $8.00</string>
+    <string name="buy_5_slots_confirm">Buy a 5 pack for $5.00</string>
+    <string name="buy_5_slots">5 slots for $5.00</string>
+    <string name="buy_another_pack">Buy another pack</string>
+    <string name="connect_your_account">Connect your account</string>
+    <string name="your_listings_is_full">Your 5 free listing slots are currently full. Would you like to purchase additional single single-use slots?</string>
+    <string name="add_some_more_description">Your description is a little short.\nAdd some more detail.</string>
+    <string name="ok">OK</string>
+    <string name="would_you_like_to_use_single_slot">Your 5 free listing slots are currently full. Would you like to use one of your single-use slots?</string>
+
+
+    <!-- key Ha Anh -->
+    <!-- <string name="google_api_key">AIzaSyCO3caF6P32AyGAAwm3EIl-cC8iNswZY7o</string> -->
+    
+    <!-- key fruity -->
+    <string name="google_api_key">AIzaSyCjItusqmX9StQg_orh_a8U7-GASNZvEcU</string>
+
+
+    <!-- Activity Feed -->
+    <string name="activity_feed">Activity feed</string>
+    <string name="follow">FOLLOW</string>
+    <string name="unfollow">UNFOLLOW</string>
+    <string name="listings">LISTINGS</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="following">FOLLOWING</string>
+    <string name="selling">Selling</string>
+    <string name="gone">Gone</string>
+    <string name="gold_member">GOLD MEMBER</string>
+    <string name="silver_member">SILVER MEMBER</string>
+    <string name="bronze_member">BRONZE MEMBER</string>
+    <string name="new_member">NEW MEMBER</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="followers_menu">Followers</string>
+    <string name="following_menu">Following</string>
+    <string name="_seconds">" seconds"</string>
+    <string name="_second">" second"</string>
+    <string name="_minutes">" minutes"</string>
+    <string name="_minute">" minute"</string>
+    <string name="_hours">" hours"</string>
+    <string name="_hour">" hour"</string>
+    <string name="_days">" days"</string>
+    <string name="_day">" day"</string>
+    <string name="_ago">" ago"</string>
+
+    <!-- Search & category -->
+    <string name="or_browse">or browse:</string>
+    <string name="or_look_for">or look for:</string>
+    <string name="free_listings">Free listings</string>
+    <string name="premium_listings">Premium listings</string>
+    <string name="quick_sales">Quick sales</string>
+    <string name="editing_categories">editing categories</string>
+    <string name="change_underlined">(<u>change</u>)</string>
+    <string name="search">Search</string>
+    <string name="search_again">Search again</string>
+
+</resources>

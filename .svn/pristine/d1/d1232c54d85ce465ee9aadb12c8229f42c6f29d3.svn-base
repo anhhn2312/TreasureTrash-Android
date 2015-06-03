@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sign_up_email_1" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlt_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/layout_margin_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="@string/sign_up_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_title_signup_login" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_large" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/signup_btn_width"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/signup_btn_height"
+                        android:background="@color/sign_up_teal"
+                        android:paddingLeft="@dimen/margin_padding_small"
+                        android:paddingRight="@dimen/margin_padding_small" >
+
+                        <ImageView
+                            android:id="@+id/ivEmailWhite"
+                            android:layout_width="@dimen/button_size_xsmall"
+                            android:layout_height="@dimen/button_size_xsmall"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="@dimen/margin_padding_tiny"
+                            android:src="@drawable/icon_email_white" />
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/sign_up_with_email"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_xxlarge" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutUsername"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/username" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                style="@style/style_icon_sign_up_left"
+                                android:background="@drawable/icon_diamond_gray" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/etUsername"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:inputType="text"
+                                android:maxLength="25"
+                                android:textColor="@color/sign_up_gray"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutEmail"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/email" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/_private" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                style="@style/style_icon_sign_up_left"
+                                android:background="@drawable/icon_email_gray" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/etEmail"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/sign_up_gray"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/sign_up_teal" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutPassword"
+                        style="@style/style_row_sign_up" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                style="@style/style_label_sign_up_gray_left"
+                                android:text="@string/password" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                android:id="@+id/lbl_show_password"
+                                style="@style/style_label_sign_up_gray_right"
+                                android:text="@string/show_password" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                style="@style/style_icon_sign_up_left"
+                                android:background="@drawable/icon_shield_gray" />
+
+                            <com.pt.treasuretrash.widget.HelveticaLightEditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:inputType="textPassword"
+                                android:textColor="@color/sign_up_gray"
+                                android:textSize="@dimen/text_size_xxnormal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="@dimen/signup_btn_width"
+                    android:layout_height="@dimen/signup_btn_height"
+                    android:layout_marginTop="@dimen/margin_padding_normal"
+                    android:background="@drawable/btn_signup_next"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:paddingLeft="@dimen/margin_padding_large"
+        android:paddingRight="@dimen/margin_padding_large" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+    </RelativeLayout>
+
+</RelativeLayout>

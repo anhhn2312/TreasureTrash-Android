@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/webview_message_dialog_height"
+    android:background="@drawable/bg_white_transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_padding_tiny" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_padding_normal"
+            android:layout_marginTop="@dimen/button_size_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/lblClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_padding_small"
+        android:text="@string/close"
+        android:textColor="@color/sign_up_teal"
+        android:textSize="@dimen/text_size_huge" />
+
+</LinearLayout>

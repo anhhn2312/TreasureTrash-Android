@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pt.treasuretrash.widget.SlidingLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llTransparentSlider"
+            android:layout_width="@dimen/width_ll_transparent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <!-- start layout your details -->
+            <include layout="@layout/your_detail_layout" />
+            <!-- end layout your details -->
+            <include layout="@layout/your_listings_layout" />
+
+            <include layout="@layout/search_location_layout" />
+
+            <include layout="@layout/sharing_setting_layout" />
+
+            <include layout="@layout/blocked_user_layout" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.pt.treasuretrash.widget.SlidingLayer>

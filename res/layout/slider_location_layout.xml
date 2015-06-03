@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pt.treasuretrash.widget.SlidingLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sll_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true" >
+
+    <LinearLayout
+        android:id="@+id/layoutWrapperChangeLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llTransparentLocation"
+            android:layout_width="@dimen/width_ll_transparent"
+            android:layout_height="match_parent"
+            android:background="@color/black_transparent_30"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_listing_header"
+                android:layout_marginTop="@dimen/margin_padding_xxtiny"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_marginRight="@dimen/margin_padding_small"
+                android:orientation="horizontal" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/change_default_location"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/lblDoneLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/done"
+                    android:textColor="@color/text_color_listing_green"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_xxsmall"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_padding_small"
+                android:paddingRight="@dimen/margin_padding_small" >
+
+                <ImageView
+                    android:layout_width="@dimen/button_size_small"
+                    android:layout_height="@dimen/button_size_small"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginRight="@dimen/margin_padding_tiny"
+                    android:src="@drawable/icon_map_marker" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/lbl_location_changed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/default_location"
+                    android:textColor="@color/text_color_listing_green"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_listing_header"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_marginRight="@dimen/margin_padding_small"
+                android:layout_marginTop="@dimen/margin_padding_small"
+                android:background="@drawable/bg_border_teal"
+                android:orientation="horizontal" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightEditText
+                    android:id="@+id/txt_type_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/change_default_location"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/margin_padding_small"
+                    android:paddingRight="@dimen/margin_padding_small"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_listing"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ImageView
+                    android:id="@+id/img_search_location"
+                    android:layout_width="@dimen/height_listing_header"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_narrow_right"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/lblCurrentLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="@dimen/margin_padding_small"
+                        android:layout_marginTop="@dimen/margin_padding_tiny"
+                        android:text="@string/current_location"
+                        android:textColor="@color/sign_up_teal"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <fragment
+                        android:id="@+id/maps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_padding_xnormal"
+                        class="com.google.android.gms.maps.SupportMapFragment" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_location_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:layout_marginRight="@dimen/margin_padding_small"
+                    android:background="@drawable/bg_border_teal_white"
+                    android:divider="@color/sign_up_teal"
+                    android:dividerHeight="1dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.pt.treasuretrash.widget.SlidingLayer>

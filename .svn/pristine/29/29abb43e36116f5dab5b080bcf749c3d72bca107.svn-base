@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAlertCategory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:weightSum="1136" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:layout_weight="170" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="816"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_tiny"
+                android:paddingLeft="@dimen/margin_padding_normal" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/or_browse"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/margin_padding_small"
+                    android:paddingLeft="@dimen/margin_padding_normal"
+                    android:paddingRight="@dimen/margin_padding_normal"
+                    android:paddingTop="@dimen/margin_padding_small"
+                    android:text="@string/edit"
+                    android:textColor="@color/sign_up_teal"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sign_up_teal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_padding_large"
+            android:paddingLeft="@dimen/margin_padding_small"
+            android:paddingRight="@dimen/margin_padding_small"
+            android:paddingTop="@dimen/margin_padding_small" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/message_alert_category"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_normal" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvCategorySignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/sign_up_teal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onSignupClick"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xxhuge" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/tvCategoryLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/sign_up_teal"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onLoginClick"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xxhuge" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

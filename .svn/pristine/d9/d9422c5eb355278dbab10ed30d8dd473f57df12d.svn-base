@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAlertFavoriteItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/llDistanceFavorite"
+    android:background="@color/sign_up_teal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_padding_large"
+    android:paddingLeft="@dimen/margin_padding_small"
+    android:paddingRight="@dimen/margin_padding_small"
+    android:paddingTop="@dimen/margin_padding_normal"
+    android:visibility="gone" >
+
+    <com.pt.treasuretrash.widget.HelveticaLightTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/message_alert_favorite"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxlarge" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_normal" >
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvFavoriteSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/sign_up_teal"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSignupClick"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxhuge" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvFavoriteLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/sign_up_teal"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onLoginClick"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xxhuge" />
+    </RelativeLayout>
+
+</LinearLayout>

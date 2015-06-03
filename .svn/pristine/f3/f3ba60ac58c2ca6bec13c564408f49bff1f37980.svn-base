@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout.FillWidthHeight"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/brown"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_padding_normal"
+            android:background="@drawable/icon_header_close" />
+
+        <ImageView
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_padding_normal"
+            android:background="@drawable/camera_icon_done" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutResizeImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/btnSubtract"
+            android:layout_width="@dimen/button_size_large"
+            android:layout_height="@dimen/button_size_large"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_padding_normal"
+            android:src="@drawable/camera_btn_zoomout" />
+
+        <SeekBar
+            android:id="@+id/sbResizeImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:progress="10"
+            android:progressDrawable="@xml/progess_drawable"
+            android:thumb="@drawable/icon_progress_scroll" />
+
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="@dimen/button_size_large"
+            android:layout_height="@dimen/button_size_large"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_padding_normal"
+            android:src="@drawable/camera_btn_zoom" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/layout_camera_bottom_child_height" >
+
+
+            <FrameLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <SurfaceView
+                    android:id="@+id/camerapreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/CropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_camera_bottom_height"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_camera_bottom_child_height"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/camera_bottom"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_gallery"
+                    android:layout_width="@dimen/width_icon_large"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_padding_xtiny"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/image_avatar_default" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnCapture"
+                android:layout_width="@dimen/layout_camera_image_height"
+                android:layout_height="@dimen/layout_camera_image_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/camera_btn_capture" />
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_camera_bottom_child_height"
+                android:layout_alignParentBottom="true"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_switch_camera"
+                    android:layout_width="@dimen/width_icon_large"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_padding_xtiny"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/btn_switch_camera" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

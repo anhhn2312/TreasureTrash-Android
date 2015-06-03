@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_padding_large"
+        android:paddingLeft="@dimen/margin_padding_xnormal"
+        android:paddingTop="@dimen/margin_padding_normal" >
+
+        <RelativeLayout
+            android:id="@+id/rlTopControl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_padding_large" >
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/your_posting"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+            <com.pt.treasuretrash.widget.HelveticaLightTextView
+                android:id="@+id/tvEditMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:text="@string/edit"
+                android:textColor="@color/sign_up_teal"
+                android:textSize="@dimen/text_size_xxlarge" />
+        </RelativeLayout>
+
+        <com.pt.treasuretrash.widget.AnimatedExpandableListView
+            android:id="@+id/lvMessageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+
+    <!--
+         <com.pt.treasuretrash.widget.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res/com.pt.treasuretrash"
+        android:id="@+id/sllMessageThread"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/llChat"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/llTransparent"
+            android:layout_width="@dimen/slidingmenu_offset"
+            android:layout_height="fill_parent"
+            android:background="@color/black_transparent_30"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_padding_small"
+            android:paddingLeft="@dimen/margin_padding_xnormal"
+            android:paddingTop="@dimen/margin_padding_normal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_xxxlarge"
+                android:layout_marginRight="@dimen/margin_padding_normal"
+                android:visibility="visible" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/conversation"
+                    android:textColor="@color/sign_up_teal"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <ImageView
+                    android:id="@+id/ivBlock"
+                    android:layout_width="@dimen/button_size_xsmall"
+                    android:layout_height="@dimen/button_size_xsmall"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_block"
+                    android:text="@string/edit" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivUser"
+                    android:layout_width="@dimen/button_size_xnormal"
+                    android:layout_height="@dimen/button_size_xnormal"
+                    android:background="@drawable/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_small"
+                    android:orientation="vertical" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/conversation"
+                        android:textColor="@color/sign_up_teal"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/conversation"
+                        android:textColor="@color/header_background"
+                        android:textSize="@dimen/text_size_xnormal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/margin_padding_normal"
+                android:background="@color/sign_up_teal" />
+
+            <ListView
+                android:id="@+id/lvMessageDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:layout_weight="1"
+                android:divider="@null" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_padding_small" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/message_input_box_height"
+                android:layout_marginRight="@dimen/margin_padding_xnormal"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="8" >
+
+                    <com.pt.treasuretrash.widget.HelveticaLightEditText
+                        android:id="@+id/etInputMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="@dimen/margin_padding_tiny"
+                        android:background="@drawable/bg_input_message"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:imeOptions="actionSend"
+                        android:inputType="text"
+                        android:textColor="@color/header_background"
+                        android:textSize="@dimen/text_size_xlarge" />
+                </LinearLayout>
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/btnSendMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_send_message" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </com.pt.treasuretrash.widget.SlidingLayer> -->
+
+    <RelativeLayout
+        android:id="@+id/rlBlackTransparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black_transparent_30"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

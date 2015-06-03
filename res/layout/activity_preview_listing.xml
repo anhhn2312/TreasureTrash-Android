@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:id="@+id/viewTransparent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/header_height"
+                            android:background="@color/black_transparent_70"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/llGone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="100dp"
+                            android:layout_below="@dimen/header_height"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="640" >
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="35" />
+
+                            <ImageView
+                                android:id="@+id/ivGone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="128"
+                                android:adjustViewBounds="true"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llPremium"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_padding_normal"
+                            android:layout_marginTop="@dimen/margin_padding_xxhuge"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <ImageView
+                                android:id="@+id/ivPremium"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/image_item_premium"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnPrev"
+                            android:layout_width="@dimen/button_size_xnormal"
+                            android:layout_height="@dimen/button_size_xnormal"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btn_prev"
+                            android:visibility="gone" />
+
+                        <com.pt.treasuretrash.widget.AutoBgButton
+                            android:id="@+id/btnNext"
+                            android:layout_width="@dimen/button_size_xnormal"
+                            android:layout_height="@dimen/button_size_xnormal"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btn_next"
+                            android:visibility="gone" />
+
+                        <com.pt.treasuretrash.widget.TwoWayView
+                            android:id="@+id/lvThumb"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/button_size_large"
+                            android:layout_alignBottom="@+id/pager"
+                            android:layout_marginBottom="@dimen/margin_padding_normal"
+                            android:layout_marginLeft="@dimen/margin_padding_normal"
+                            android:layout_marginRight="@dimen/margin_padding_normal"
+                            android:background="@color/transparent"
+                            android:orientation="horizontal" />
+                    </RelativeLayout>
+
+                    <ScrollView
+                        android:id="@+id/svDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/header_background" >
+
+                        <com.pt.treasuretrash.widget.HelveticaLightTextView
+                            android:id="@+id/tvDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/margin_padding_small"
+                            android:paddingLeft="@dimen/margin_padding_normal"
+                            android:paddingRight="@dimen/margin_padding_normal"
+                            android:paddingTop="@dimen/margin_padding_small"
+                            android:text="@string/demo_location"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_xlarge" />
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_padding_small"
+                        android:paddingLeft="@dimen/margin_padding_normal"
+                        android:paddingTop="@dimen/margin_padding_small" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/button_size_small"
+                                    android:layout_height="@dimen/button_size_small"
+                                    android:src="@drawable/icon_price_details" />
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvPrice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_small"
+                                    android:singleLine="true"
+                                    android:textColor="@color/header_background"
+                                    android:textSize="@dimen/text_size_xlarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_tiny"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/ivCategory"
+                                    android:layout_width="@dimen/button_size_small"
+                                    android:layout_height="@dimen/button_size_small"
+                                    android:src="@drawable/icon_category_details" />
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvCategory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_small"
+                                    android:singleLine="true"
+                                    android:textColor="@color/sign_up_teal"
+                                    android:textSize="@dimen/text_size_xlarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_tiny"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/button_size_small"
+                                    android:layout_height="@dimen/button_size_small"
+                                    android:src="@drawable/icon_location_details" />
+
+                                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                    android:id="@+id/tvLocation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_small"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:singleLine="true"
+                                    android:textColor="@color/sign_up_teal"
+                                    android:textSize="@dimen/text_size_xlarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_padding_tiny"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="@dimen/button_size_small"
+                                    android:layout_height="@dimen/button_size_small"
+                                    android:src="@drawable/icon_seller_details" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_padding_small"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                                        android:id="@+id/tvSeller"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/sign_up_teal"
+                                        android:textSize="@dimen/text_size_xlarge" />
+
+                                    <ImageView
+                                        android:id="@+id/ivReward"
+                                        android:layout_width="@dimen/button_size_small"
+                                        android:layout_height="@dimen/button_size_small"
+                                        android:layout_marginLeft="@dimen/margin_padding_xtiny"
+                                        android:src="@drawable/addlisting_preview_icon_star" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_bottom_height" >
+
+                <com.pt.treasuretrash.widget.AutoBgButton
+                    android:id="@+id/img_publish_listing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_publish_listing"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/login_text_button_margin_left"
+                    android:text="@string/publish_listing"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xhuge" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_icon_large"
+                    android:layout_height="match_parent"
+                    android:background="@color/header_background"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="@dimen/height_icon_large"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/ic_back"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_header_gradient"
+        android:paddingLeft="@dimen/margin_padding_small" >
+
+        <com.pt.treasuretrash.widget.AutoBgButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_padding_normal"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:background="@drawable/btn_back" />
+
+        <com.pt.treasuretrash.widget.HelveticaLightTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xhuge" />
+    </RelativeLayout>
+
+</RelativeLayout>

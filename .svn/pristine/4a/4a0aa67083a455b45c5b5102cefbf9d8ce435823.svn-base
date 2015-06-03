@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutWrapperYourListing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white" >
+
+    <com.pt.treasuretrash.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_free_listings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_small"
+                    android:text="@string/your_5_free_listings"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/grv_free_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_extra_listings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_padding_tiny"
+                    android:paddingLeft="@dimen/margin_padding_small"
+                    android:paddingRight="@dimen/margin_padding_small"
+                    android:paddingTop="@dimen/margin_padding_small"
+                    android:text="@string/your_addtional_listings"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/lblAboveMessageAdditonSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_padding_small"
+                    android:paddingLeft="@dimen/margin_padding_small"
+                    android:paddingRight="@dimen/margin_padding_small"
+                    android:text="@string/message_have_not_ad_slot"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xsmall" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/grv_extra_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buy_a_pack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_small"
+                android:layout_marginTop="@dimen/margin_padding_small"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_small" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/lblAddtionalTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_padding_tiny"
+                    android:paddingRight="@dimen/margin_padding_small"
+                    android:paddingTop="@dimen/margin_padding_small"
+                    android:text="@string/your_addtional_listings"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_padding_tiny"
+                    android:layout_marginTop="@dimen/margin_padding_tiny"
+                    android:background="@drawable/bg_border_teal"
+                    android:paddingBottom="@dimen/margin_padding_xtiny"
+                    android:paddingLeft="@dimen/margin_padding_small"
+                    android:paddingRight="@dimen/margin_padding_small"
+                    android:paddingTop="@dimen/margin_padding_xtiny" >
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_small"
+                        android:layout_height="@dimen/height_icon_small"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_narrow_down" />
+
+                    <com.pt.treasuretrash.widget.HelveticaLightTextView
+                        android:id="@+id/lbl_buy_a_pack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_a_pack"
+                        android:textColor="@color/sign_up_teal"
+                        android:textSize="@dimen/text_size_large" />
+                </RelativeLayout>
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:id="@+id/lblMessageAdditonSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_have_not_ad_slot"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xsmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding_normal"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_small"
+                    android:text="@string/expired"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/grv_expired_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.pt.treasuretrash.widget.HelveticaLightTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_small"
+                    android:text="@string/gone"
+                    android:textColor="@color/text_color_listing"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <com.pt.treasuretrash.widget.AutoFillHeightGridView
+                    android:id="@+id/grv_gone_listings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.pt.treasuretrash.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

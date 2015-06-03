@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_title_signup_login">36sp</dimen>
+    <!-- Text Size -->
+    <dimen name="text_size_tiny">4sp</dimen>
+    <dimen name="text_size_xtiny">6sp</dimen>
+    <dimen name="text_size_xxtiny">8sp</dimen>
+    <dimen name="text_size_small">9sp</dimen>
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_xxsmall">11sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_xnormal">13sp</dimen>
+    <dimen name="text_size_xxnormal">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+    <dimen name="text_size_huge">22sp</dimen>
+    <dimen name="text_size_xhuge">24sp</dimen>
+    <dimen name="text_size_xxhuge">26sp</dimen>
+    <dimen name="text_size_xxxhuge">28sp</dimen>
+
+    <!-- Margin & padding -->
+    <dimen name="margin_padding_tiny">5dp</dimen>
+    <dimen name="margin_padding_small">9dp</dimen>
+    <dimen name="margin_padding_normal">15dp</dimen>
+    <dimen name="margin_padding_xnormal">20dp</dimen>
+    <dimen name="margin_padding_large">30dp</dimen>
+    <dimen name="margin_padding_huge">40dp</dimen>
+    <dimen name="margin_padding_xhuge">50dp</dimen>
+    <dimen name="margin_padding_xxhuge">110dp</dimen>
+
+    <!-- Left Menu -->
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="left_menu_icon_width">40dp</dimen>
+    <dimen name="left_menu_icon_height">40dp</dimen>
+    <dimen name="left_menu_item_text_size">20dp</dimen>
+    <dimen name="left_menu_item_padding_left">2dp</dimen>
+    <dimen name="left_menu_item_padding_right">8dp</dimen>
+    <dimen name="left_menu_item_padding_top">20dp</dimen>
+    <dimen name="left_menu_item_padding_bottom">20dp</dimen>
+    <dimen name="left_menu_item_border_width">2dp</dimen>
+    <dimen name="menu_user_avatar_size">80dp</dimen>
+
+    <!-- Action Bar -->
+    <dimen name="action_bar_iv_menu_size">20dp</dimen>
+    <dimen name="action_bar_btn_menu_size">60dp</dimen>
+    <dimen name="action_bar_btn_search_size">40dp</dimen>
+    <dimen name="action_bar_et_search_width">150dp</dimen>
+    <dimen name="action_bar_btn_close_size">30dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_edittext_width">350dp</dimen>
+    <dimen name="login_go_btn_size">80dp</dimen>
+    <!-- sign up & login -->
+    <dimen name="layout_margin_top">120dp</dimen>
+    <dimen name="height_description">200dp</dimen>
+    <dimen name="category_parent_magin">100dp</dimen>
+    <dimen name="category_children_magin">140dp</dimen>
+
+</resources>
